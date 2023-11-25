@@ -131,12 +131,12 @@ setColors();
 $("#next-slide").on("click", nextSlide);
 $("#prev-slide").on("click", prevSlide);
 
-let intervalId = setInterval(nextSlide, 2000);
+let intervalId = setInterval(nextSlide, 5000);
 
 $('#slider-container, .action').hover(function () {
   window.clearInterval(intervalId);
 });
 
 $('#slider-container, .action').mouseleave(function () {
-  intervalId = setInterval(nextSlide, 2000);
+  intervalId = setInterval(nextSlide, 5000);
 });

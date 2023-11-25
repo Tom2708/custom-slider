@@ -10,7 +10,7 @@ It works both ways, forward and backward
 
 `setInterval(nextSlide, 5000);`
 
-If you don't want the slider to be automatic, delete/comment the `setInterval` line.
+If you don't want the slider to be automatic, delete/comment the `setInterval` lines.
 
 ### Slides
 
