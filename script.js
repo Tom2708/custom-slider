@@ -131,4 +131,12 @@ setColors();
 $("#next-slide").on("click", nextSlide);
 $("#prev-slide").on("click", prevSlide);
 
-setInterval(nextSlide, 5000);
+let intervalId = setInterval(nextSlide, 2000);
+
+$('#slider-container, .action').hover(function () {
+  window.clearInterval(intervalId);
+});
+
+$('#slider-container, .action').mouseleave(function () {
+  intervalId = setInterval(nextSlide, 2000);
+});
